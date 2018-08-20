@@ -59,7 +59,7 @@ Note: Please use /path-to-project/public as DocumentRoot for this application, o
 
 ### Example success output of API without 'withRating' parameter in query string:
 
-```
+```json
 {
     "Count": 4,
     "Results": [
@@ -85,7 +85,7 @@ Note: Please use /path-to-project/public as DocumentRoot for this application, o
 
 ### Example success output of API with 'withRating' parameter in query string:
 
-```
+```json
 {
     "Count": 4,
     "Results": [
@@ -115,7 +115,7 @@ Note: Please use /path-to-project/public as DocumentRoot for this application, o
 
 ### Example error (failure) output of API:
 
-```
+```json
 {
     "Count": 0,
     "Results": []
