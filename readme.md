@@ -54,3 +54,70 @@ Where:
 }
 ```
 Note: Please use /path-to-project/public as DocumentRoot for this application, otherwise you can prefix /api with /public so that it will be used as localhost:[port]/public/api/
+
+## Response
+
+### Example success output of API without 'withRating' parameter in query string:
+
+```
+{
+    "Count": 4,
+    "Results": [
+        {
+            "VehicleId": 9403,
+            "Description": "2015 Audi A3 4 DR AWD"
+        },
+        {
+            "VehicleId": 9408,
+            "Description": "2015 Audi A3 4 DR FWD"
+        },
+        {
+            "VehicleId": 9405,
+            "Description": "2015 Audi A3 C AWD"
+        },
+        {
+            "VehicleId": 9406,
+            "Description": "2015 Audi A3 C FWD"
+        }
+    ]
+}
+```
+
+### Example success output of API with 'withRating' parameter in query string:
+
+```
+{
+    "Count": 4,
+    "Results": [
+        {
+            "VehicleId": 9403,
+            "Description": "2015 Audi A3 4 DR AWD",
+            "CrashRating": "5"
+        },
+        {
+            "VehicleId": 9408,
+            "Description": "2015 Audi A3 4 DR FWD",
+            "CrashRating": "5"
+        },
+        {
+            "VehicleId": 9405,
+            "Description": "2015 Audi A3 C AWD",
+            "CrashRating": "Not Rated"
+        },
+        {
+            "VehicleId": 9406,
+            "Description": "2015 Audi A3 C FWD",
+            "CrashRating": "Not Rated"
+        }
+    ]
+}
+```
+
+### Example error (failure) output of API:
+
+```
+{
+    "Count": 0,
+    "Results": []
+}
+```
