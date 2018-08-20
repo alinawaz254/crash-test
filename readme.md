@@ -19,7 +19,8 @@
 - GET http://localhost/crash-test/public/api/vehicles/<MODEL YEAR>/<MANUFACTURER>/<MODEL>?withRating=true
 
 Where:
-* '<MODEL YEAR>', '<MANUFACTURER>' and '<MODEL>' are variables that are used when calling the NHTSA API. Example values for these are:
+* '<MODEL YEAR>', '<MANUFACTURER>' and '<MODEL>' are variables that are used when calling the NHTSA API.
+* Example values for these are:
 * '<MODEL YEAR>': 2015
 * '<MANUFACTURER>': Audi
 * '<MODEL>': A3
@@ -39,7 +40,8 @@ Where:
 - GET http://localhost:<port>/api/vehicles/<MODEL YEAR>/<MANUFACTURER>/<MODEL>?withRating=true
 
 Where:
-* '<MODEL YEAR>', '<MANUFACTURER>' and '<MODEL>' are variables that are used when calling the NHTSA API. Example values for these are:
+* '<MODEL YEAR>', '<MANUFACTURER>' and '<MODEL>' are variables that are used when calling the NHTSA API.
+* Example values for these are:
 * '<MODEL YEAR>': 2015
 * '<MANUFACTURER>': Audi
 * '<MODEL>': A3
