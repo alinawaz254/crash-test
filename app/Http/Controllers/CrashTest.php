@@ -39,7 +39,7 @@ class CrashTest extends Controller
 
         $response = $this->defaultResponse; // Default response
 
-        if ($input['modelYear'] != '' && $input['manufacturer'] != '' && $input['model'] != '') {
+        if ($input['modelYear'] > 0 && $input['manufacturer'] != '' && $input['model'] != '') {
             $json     = $this->getVehiclesData($input);
             $response = json_decode($json, true); // true to get output in array
 
